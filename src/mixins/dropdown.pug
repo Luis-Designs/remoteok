@@ -1,0 +1,5 @@
+mixin dropdown(id, name, options)
+    ul(id=id, name=name)
+        each option, key in options
+            if key !== 'default'
+                li(id=key) #{option}

@@ -1,0 +1,5 @@
+include ../../data/selects
+
+each option, key in selects[0].options
+    if key !== "default"
+        button(id=key,disabled='') #{option}

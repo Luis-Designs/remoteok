@@ -1,0 +1,15 @@
+include ../../mixins/dropdown
+include ../../mixins/icon
+include ../../data/selects
+
+.sorting-filters-select
+    img(src="https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg", alt="...")
+
+    each select, key in selects
+        .sorting-filters-options
+            input(type="text", id=select.id, placeholder=select.options.default, maxlength=12)
+            +icon('dropdown')(id=select.id + 'DropIcon')
+            +dropdown(select.id, select.name, select.options)
+
+.sorting-filters-sortby
+    button 🦴 Sort by

@@ -1,0 +1,88 @@
+@import '../base/variables'
+
+.header
+    background-image: url('https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg')
+    position: relative
+    z-index: 100
+
+.header-footer
+    position: absolute
+    width: 100%
+    background-image: url('https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyFooter_jvzp0w.svg')
+    height: 320px
+    background-size: cover
+    transform: translateY(-16%)
+    z-index: 200
+
+.header-buttons
+    width: 100%
+    display: flex
+    justify-content: end
+
+    button
+        margin: 0 $m-1
+
+.brand
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    position: relative
+    transform: translateY(-16%)
+
+    div
+        margin: $m-2 0px
+
+    & .brand-name
+        font-size: 44px
+
+        & span:first-child
+            font-family: 'Pacifico', cursive
+            margin: 0 $m-2
+
+        & span:nth-child(2)
+            border: 1.8px solid $white
+            position: absolute
+            height: 40px
+            transform: translateY(64%)
+
+        & span:nth-child(3)
+            font-family: 'Nunito', sans-serif
+            font-size: 28px
+            font-weight: 800
+            margin: 0 0 0 $m-3
+
+        & span:last-child
+            font-family: 'Nunito', sans-serif
+            font-size: 16px
+            font-weight: 800
+            position: absolute
+            transform: translateY(200%)
+
+    & .brand-message
+        font-size: 44px
+        font-family: 'Nunito', sans-serif
+
+        p b
+            font-weight: 800
+
+    & .search-bar
+        position: relative
+
+        svg
+            position: absolute
+            fill: $black
+            z-index: 300
+            transform: translate(80%, 60%)
+
+        input
+            width: 400px
+            border-radius: 20px
+            border: 2px solid $white
+            padding: $p-3 $p-3 $p-3 calc( $p-4 * 3)
+            font-weight: bold
+            font-size: 20px
+
+        input:focus
+            outline: none

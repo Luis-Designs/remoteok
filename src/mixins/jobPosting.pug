@@ -1,0 +1,139 @@
+mixin jobPosting(data, key)
+    .job-posting
+        .job-posting-img
+            img(src=data.logo, alt=data.company + key)
+        .job-posting-info
+            h2 #{data.name}
+                if data.verified
+                    span.verified VERIFIED
+            p #{data.company}
+            each location, key in data.filters.location
+                span #{location}
+            
+            span $#{data.filters.salary.from}k - $#{data.filters.salary.to}k
+            if data.filters.contrator
+                span #{data.filters.contrator}
+        
+        .job-posting-keywords
+            each keyword, key in data.keywords
+                button(id=key) #{keyword}
+        
+        .job-posting-time
+            span #{data.time}
+
+        .job-posting-apply
+            button APPLY
+        
+    if data.company === "Whimsical"
+        .job-posting-description.hidden 
+            div
+                div
+                    p #{data.company} is hiring a
+                    h2 Remote #{data.name}
+                    
+                    h3 Description
+                    p <b> #{data.company}</b> is a B2B SaaS company on a mission to make collaboration more enjoyable and productive by building an all-in-one collaboration hub. We are are passionate about user experience, interconnectedness of tools and building software that feels like magic.
+                    p We’re looking for an experienced Marketing Designer to help us evolve and scale the Whimsical brand across various channels and mediums.
+                    
+                    h3 About The Role
+                    p <b> #{data.company}</b> is a product-led company that truly values design and craftsmanship. We strive to build world-class software that is fast, elegant, and insanely polished. Whimsical is extremely visual and design plays a central role in everything we do. In short, this is an incredible place to be a designer.
+                    p This is an exciting opportunity to help grow and elevate Whimsical’s marketing. The right candidate is a versatile designer who is comfortable getting in the weeds and working directly in the tools to build effective marketing experiences (mainly digital and web).
+                    p You will report to our Head of Product Design, <a href="#">Mindy Wagner</a> . You will also work closely with the VP of Marketing, <a href="#">Melissa Ho</a>.
+                
+                div
+                    div
+                        img(src=data.logo, alt=data.company + key)
+                    h2 #{data.company}
+                    a(href="#") #{data.company}.com
+                    button.btn-lg.btn-orange Apply for this job
+                    span 👀 3,951 views
+                    span ✅ 239 applied (6%)
+                    b Share this job:
+                    a.btn-link(href="#") https://aprendiendotodo.com
+                    span.short-link Get a <span>rok.co</span> short link
+                    p Also hiring:
+                    a(href="#") People Operations Generalist
+    else
+        .job-posting-description.hidden
+            //- div
+            //-     h4 Your responsibilities include
+            //-     ul 
+            //-         li Develop and design marketing concepts that bring our brand to life, connect with potential customers, and drive acquisition across various touch points (primarily digital) such as our website, social graphics, and marketing campaigns.
+            //-         li Create brand assets including graphics, photography, illustration, icons, infographics, video/animations, etc. Deliver unexpected and inspiring designs on both large and small tasks.
+            //-         li Improve the user experience and effectiveness of our website, campaigns, and activations.
+            //-         li Translate data-driven insights into improved brand experiences.
+                
+            //- div
+            //-     h4 About you
+            //-     ul 
+            //-         li You have 5+ years of proven marketing design experience and a portfolio showcasing high-quality marketing and web design deliverables.  
+            //-         li You are a creative visual storyteller with excellent typography, color, layout, and composition skills.
+            //-         li You can develop a beautiful, thoughtful, and engaging website UI. You are comfortable with HTML/CSS and can build and edit websites using Webflow. Bonus points if you can also create website animations.
+            //-         li You have a working knowledge of the various tools needed to realize your vision.
+            //-         li You live at the intersection of marketing and user experience and understand how to take users on a complete journey from discovery to adoption and success. 
+            //-         li You are excited to work at every stage of a project, from initial concept through final production, with minimal direct oversight.
+            //-         li You feel that our <b>philosophy</b>  resonates with you and you can see it guiding your decisions while at Whimsical.
+            //-         li You are able to communicate in English clearly both verbally and in writing.
+            //-         li You're a self-starter who can keep track of multiple projects with minimal oversight.
+            
+            //- div
+            //-     h4 Requirements
+            //-     ul 
+            //-         li Due to legal and compliance reasons we’re looking for someone in either
+            //-             ul
+            //-                 li 🇺🇸🇨🇦North America
+            //-                 li 🇪🇺European Union
+            //-                 li 🇬🇧United Kingdom
+            //-         li A resume or manually entered experience (you can choose your preference).
+            //-         li A link to your portfolio.
+            //-         li Thoughtful, thorough responses to all the application questions.
+            
+            //- div
+            //-     h4 Benefits
+            //-     ul
+            //-         li 100% Remote: We’re spread from California to Latvia and we’ve got you covered if you prefer to work from a coworking space
+            //-         li Salary: Annual salary starting at $118,164-$147,705
+            //-         li Vacation: 6 weeks of paid time off each year
+            //-         li Parental Leave: 16 weeks paid by company
+            //-         li Equipment: We provide all the tech you need to work successfully
+            //-         li Summits: We try to bring everyone together at least twice a year
+            //-         li Pension*: 401k with 6% company matching
+            //-         li Health Insurance*: Paid by company for you and dependents
+            //-     p * Availability may depend on your location and our current administrative capabilities there.
+
+            //- div
+            //-     h4 About Whimsical
+            //-     p Whimsical was founded in 2017 by Kaspars Dancis and Steve Schoeffel to help teams be more effective in the distributed and fully digital work environment. 
+            //-     p Whimsical's product is expressive, fast, and delightful. We believe that software should spark joy, not dread. 
+            //-     p We are a remote-first company and big proponents of remote work because it democratizes the opportunities for people everywhere.
+            //-     p Our operating philosophy is based on set of core principles, such as:
+            //-     ul 
+            //-         li <b>Sustainability:</b> We don't believe in growth at all costs. Growth is a fundamental part of a healthy existence but we want it to be in balance with sustainability and bounded by ethical behavior. We strive to work calm, 40-hour work weeks. Whimsical is also committed to doing our part towards a sustainable future for the planet.
+            //-         li <b>Craftsmanship:</b> We care deeply about our work. We are specialists, eager learners, and persistent in our pursuit of quality work. We're patient and committed because building great things takes time.
+            //-         li <b>Long-term focus:</b> We're building Whimsical for the long-haul, not a quick exit. We avoid shortcuts and consider every key decision from a 10+ year perspective.
+            //-         li <b>Partnership Mindset:</b> We’ve built the company around the idea that everybody who joins us should feel like they are partners in the business. Time is precious and we want Whimsical to be the place where people invest their time rather than sell it. Our equity offers are 100% transparent and above market average. We also pay everyone at the same level the same salary, no matter where they live.
+            //-     p Please mention the word SWIFTNESS when applying to show you read the job post completely (#RMjA5LjQ1LjU4LjE2MQ==). This is a feature to avoid fake spam applicants. Companies can search these words to find applicants that read this and instantly see they're human.
+
+            //- div
+            //-     h4 Salary and compensation
+            //-     p $#{data.filters.salary.from} -- $#{data.filters.salary.to}/year
+
+            //- div
+            //-     h4 Benefits
+            //-     p 💰 401(k)
+            //-     p 🌎 Distributed team
+            //-     p ⏰ Async
+            //-     p 🤓 Vision insurance
+            //-     p 🦷 Dental insurance
+            //-     p 🚑 Medical insurance
+            //-     p 🏖 Paid time off
+            //-     p 💰 401k matching
+            //-     p 🏔 Company retreats
+            //-     p 🎅 We hire old (and young)
+
+            //- .card
+            //-     .card-body
+            //-         h2 How do you apply?
+            //-         button Apply for this job
+            //-         p <b>👉 Please reference you found the job on Remote OK, this helps us get more companies to post here, thanks!</b>
+            //-         p When applying for jobs, you should NEVER have to pay to apply. You should also NEVER have to pay to buy equipment which they then pay you back for later. Also never pay for trainings you have to do. Those are scams! NEVER PAY FOR ANYTHING! Posts that link to pages with "how to work online" are also scams. Don't use them or pay for them. Also always verify you're actually talking to the company in the job post and not an imposter. A good idea is to check the domain name for the site/email and see if it's the actual company's main domain name. Scams in remote work are rampant, be careful! Read more to avoid scams. When clicking on the button to apply above, you will leave Remote OK and go to the job application page for that company outside this site. Remote OK accepts no liability or responsibility as a consequence of any reliance upon information on there (external sites) or here.

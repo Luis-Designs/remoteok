@@ -1,0 +1,41 @@
+extends ../layouts/default
+include ../../mixins/button
+include ../../mixins/logo
+
+block content
+    main.container-fluid.main
+        .remote-job-advertisement
+            p <b>👉 Hiring remotely? Reach 2,000,000+ remote workers on the 🏆 #1 Remote Job Board</b>
+            +button('Post a remote job')(class="btn btn-orange")
+            +button('Hide this')(class="btn btn-orange-outline", id="jobAdvertisement")
+        
+        .featured-partners
+            +logo('trustedby')
+            +logo('amazon')
+            +logo('gh')
+            +logo('stripe')
+            +logo('shopify')
+            +logo('upwork')
+            +logo('indeed')
+            +logo('angellist')
+
+        section.sorting-job
+            .sorting-filters   
+                include ../../partials/sections/filters
+        section.sorting-job
+            .sorting-filters-search   
+                include ../../partials/sections/filters-search
+
+        .register-job
+            .register-job-logo
+                img(src="https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg", alt="...")
+            .register-job-description
+                h2 Nomad Health by SafetyWing
+                p Global health insurance for remote workers and nomads
+            .register-job-button
+                button.btn-lg.btn-sky-blue Sign me up
+
+        .job-posting-container    
+            include ../../partials/sections/jobPosting
+
+        

@@ -1,0 +1,254 @@
+[
+    {
+        "name": "Marketing Designer",
+        "company": "Whimsical",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": true,
+        "filters": {
+            "location": [
+                "Europe",
+                "United Kingdom",
+                "United States",
+                "Canada"
+            ],
+            "salary": {
+                "from": 1100,
+                "to": 1500
+            }
+        },
+        "keywords": {
+            "design": "Design",
+            "marketing": "Marketing"
+        },
+        "time": "6d"
+    },
+    {
+        "name": "PHP Developer",
+        "company": "Transax",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 50,
+                "to": 120
+            }
+        },
+        "keywords": {
+            "engineer": "Engineer",
+            "developer": "Developer",
+            "fullstack": "Full Stack"
+        },
+        "time": "22d"
+    },
+    {
+        "name": "Site Reliability Engineer 🎈",
+        "company": "Sticker Mule",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 140,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "engineer": "Engineer",
+            "javascript": "JavaScript",
+            "golang": "Golang"
+        },
+        "time": "4d"
+    },
+    {
+        "name": "Software engineer 🎈",
+        "company": "Sticker Mule",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 140,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "developer": "Developer",
+            "javascript": "JavaScript",
+            "react": "React"
+        },
+        "time": "4d"
+    },
+    {
+        "name": "Senior Front End Developer",
+        "company": "Migaku",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 60,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "engineer": "Engineer",
+            "senior": "Senior",
+            "developer": "Developer"
+        },
+        "time": "24d"
+    },
+    {
+        "name": "Software Engineer Backend 🎈",
+        "company": "Sticker Mule",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 130,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "developer": "Developer",
+            "javascript": "JavaScript",
+            "react": "React"
+        },
+        "time": "1d"
+    },
+    {
+        "name": "Freelance Writer 🎈",
+        "company": "IAPWE",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 40,
+                "to": 50
+            }
+        },
+        "keywords": {
+            "contentwriting": "Content Writing",
+            "nontech": "Non Tech",
+            "writing": "Writing"
+        },
+        "time": "27d"
+    },
+    {
+        "name": "Platform Engineer",
+        "company": "Wander.com ",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 10,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "engineer": "Engineer",
+            "sysadmin": "Sys Admin",
+            "javascript": "JavaScript"
+        },
+        "time": "5d"
+    },
+    {
+        "name": "Software Developer 🎈",
+        "company": "White Sand",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": true,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 40,
+                "to": 150
+            }
+        },
+        "keywords": {
+            "senior": "Senior",
+            "developer": "Developer",
+            "javascript": "JavaScript"
+        },
+        "time": "6d"
+    },
+    {
+        "name": "Freelance Copywriter",
+        "company": "Doughnut",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": true,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 50,
+                "to": 80
+            }
+        },
+        "keywords": {
+            "nontech": "Non Tech",
+            "contentwriting": "Content Writing"
+        },
+        "time": "7d"
+    },
+    {
+        "name": "Freelance Graphic Designer",
+        "company": "Doughnut",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 60,
+                "to": 90
+            },
+            "contrator": true
+        },
+        "keywords": {
+            "design": "Design"
+        },
+        "time": "8h"
+    },
+    {
+        "name": "Platform Technical Support Specialist",
+        "company": "Lyra Health",
+        "logo": "https://res.cloudinary.com/dokwefr5i/image/upload/v1678824747/Remoteok/WavyHeader_e7mea1.jpg",
+        "verified": false,
+        "filters": {
+            "location": [
+                "Worldwide"
+            ],
+            "salary": {
+                "from": 73,
+                "to": 118
+            }
+        },
+        "keywords": {
+            "system": "System",
+            "teaching": "Teaching",
+            "cfo": "Cfo"
+        },
+        "time": "2h"
+    }
+]

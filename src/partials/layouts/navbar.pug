@@ -1,0 +1,24 @@
+include ../../mixins/button
+include ../../mixins/icon
+
+    
+header.header.container-fluid.text-white
+    .header-buttons
+        +button('Health insurance')(class="btn btn-sky-blue")
+        +button('Log in')(class="btn btn-white")
+        +button('Post a remote job')(class="btn btn-orange")
+    .brand
+        .brand-name
+            span remote
+            span
+            span OK 
+            span ®
+        .brand-message 
+            p find a <b>remote job</b>
+        .brand-message 
+            p work from <b>anywhere</b>
+        .search-bar
+            +icon('search')(class="header-search")
+            input(type="search", id="searchBar", autofocus="")
+
+.header-footer

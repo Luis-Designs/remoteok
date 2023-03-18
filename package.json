@@ -1,0 +1,15 @@
+{
+  "name": "remoteok",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn parcel src/views/pages/*.pug",
+    "build": "yarn parcel build src/views/pages/*.pug --public-url /remoteok/",
+    "push-gh-pages": "yarn push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "2.8.3",
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "^2.8.3"
+  }
+}
